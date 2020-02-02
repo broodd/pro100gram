@@ -1,0 +1,48 @@
+@import './_mixins.sass'
+@import './stuff.sass'
+
+// default
+// -----------------------------------------------------
+
+// colors
+.bg
+  &-gra
+    &-primary
+      // background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12)
+      background-image: linear-gradient(to right top, #4cc196, #44bc9a, #3eb79d, #3bb29f, #3aada1)
+      // background-image: linear-gradient(to right top, #ffc107, #c9ca2d, #98cb54, #6dc878, #4cc196)
+
+// font
+// -----------------------------------------------------
+.fz
+  &-40
+    font-size: torem(30)
+
+
+.text
+  &--small
+    font-weight: 300
+    color: #8e9194
+    font-size: torem(13)
+
+
+.v-application
+  // background-color: #F8F8F8
+  // background-color: #FAFAFA
+  // background-color: #444063
+  // background-image: linear-gradient(to bottom, #f8f8f8, #f8f8f8, #f8f7f8, #f7f7f8, #f7f7f8)
+
+
+.draggable
+  cursor: move
+  position: relative
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+  &__add
+    .fill-height 
+      border: 1px solid #35A65F
+
+.sortable-chosen.poll
+  background-color: #ffc107
